@@ -1,7 +1,7 @@
 import MapboxMap from "../components/Map";
 
 function App() {
-  return (<div className="w-100% h-1/2">
+  return (<div className="h-100%">
     <MapboxMap />
   </div>)
 }

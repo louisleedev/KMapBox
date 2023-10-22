@@ -2,14 +2,35 @@
 
 ## Overview
 
-This project utilizes React, Next.js, Tailwind CSS, and TypeScript to create an interactive map visualization displaying state obesity statistics. It integrates React-Map-GL for rendering maps, allowing users to explore obesity data in a visually engaging way. The application features the ability to search and filter data points on the map, enhancing user interactivity.
+This project leverages React, Next.js, and Mapbox to create an interactive map application for visualizing obesity statistics in various states. The application utilizes Mapbox GL for mapping functionalities. Key features and components include:
+![Local Image](./src/images/whole_map.png)
+
+**1.Interactive Map:**
+- The project incorporates Mapbox GL, a powerful mapping library, to create an interactive map interface.
+
+**2.Data Visualization:**
+
+- GeoJSON data representing obesity statistics for different states is loaded onto the map, allowing users to visualize and analyze the data visually.
+- The map layers are styled to represent the states marked using colors and opacity.
+
+**3.Search Functionality:**
+
+- Users can search for specific states using a search bar. When a state is searched, the application highlights the corresponding area on the map, providing a clear focus on the selected state's obesity data.
+![Local Image](./src/images/search.png)
+
+**4.User Interaction:**
+
+- The application provides a seamless user experience with interactive features. Users can click on map features to view detailed information about a specific state's obesity statistics, including obesity rate, shape area, and shape length.
+![Local Image](./src/images/info.png)
 
 ## Technologies Used
 
-- **React**: A JavaScript library for building user interfaces.
-- **Next.js**: A React framework for building server-rendered applications.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **TypeScript**: A statically typed superset of JavaScript that adds optional types.
+- **React:** A JavaScript library for building user interfaces.
+- **Next.js:** A React framework for building server-rendered applications.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **TypeScript:** A statically typed superset of JavaScript that adds optional types.
+- **Mapbox GL:** Versatility and powerful mapping capabilities, allowing for easy integration of interactive maps.
+- **ESLint:** Static code analysis tool for identifying and fixing problems in JavaScript code
 
 **Why React.js, Next.js and TypeScript?**
 I choose to use React, Next.js, and TypeScript in my projects because of the unparalleled advantages they offer in terms of development speed, maintainability, and scalability. React's component-based architecture allows me to build modular and reusable user interfaces, making it easier to manage complex applications. Next.js, being a powerful React framework, simplifies server-side rendering, routing, and deployment, providing a efficient and optimized user experience with SSR and SSG feature by default. Additionally, TypeScript enhances my productivity by adding static types, enabling early error detection, and improving code readability, which leads to more reliable and maintainable code. The combination of React, Next.js, and TypeScript not only streamlines my development process but also ensures the creation of robust, high-quality web applications tailored to my project requirements.
@@ -58,42 +79,4 @@ I choose to use Tailwind CSS in my projects because of its high-efficient speed 
     - Interact with the map to view different state obesity statistics.
 - **Search and Filter:**
     - Use the search bar to find specific locations on the map.
-    - Apply filters to visualize specific obesity data points based on criteria.
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    - Click a specific state to get the infomation like shape length, shape area and obesity.
